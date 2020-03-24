@@ -81,7 +81,7 @@ export const projectsUrls = [
   {
     name: "Memory Allocation",
     code: "https://github.com/MostafaFarag14/Memory-allocation.git",
-    image: "img/allocation.png",
+    image: "img/allocation.PNG",
     description: `A Desktop App built using c# and winForms to simulate allocating of proccesses algorithms`,
     tools: [
       "img/cSharp.png",

@@ -34,7 +34,7 @@ export default class Main extends Component {
                           <ul className="d-flex">
                             {project.tools.map(tool => {
                               return (
-                                tool === "/img/winform.png" ? <li className="px-1">
+                                tool === "img/winform.png" ? <li className="px-1">
                                   <img height="30" width="70" src={tool} />
                                 </li>
                                   :
