@@ -1,6 +1,6 @@
 export const projectsUrls = [
   {
-    name: "Moive-App",
+    name: "Movie-App",
     url: "https://ree-action.netlify.com/",
     code: "https://github.com/MostafaFarag14/Movie-App.git",
     image: "img/reeaction.PNG",
