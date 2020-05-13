@@ -1,23 +1,24 @@
 import React, { Component } from 'react'
+import {imgPath} from '../projectsUrls'
 import './contact.css'
 const contacts = [
   {
-    logo: "img/phone.svg",
+    logo: `${imgPath}/phone.svg`,
     url: "#",
     text: "01152787808"
   },
   {
-    logo: "img/linkedin.svg",
+    logo: `${imgPath}/linkedin.svg`,
     url: "https://www.linkedin.com/in/mostafafarag14/",
     text: ""
   },
   {
-    logo: "img/GitHub.png",
+    logo: `${imgPath}/GitHub.png`,
     url: "https://github.com/MostafaFarag14",
     text: ""
   },
   {
-    logo: "img/gmail.png",
+    logo: `${imgPath}/gmail.png`,
     url: "#",
     text: "mostafafarag140@gmail.com"
   }

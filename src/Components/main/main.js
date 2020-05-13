@@ -2,7 +2,6 @@ import React, { Component } from 'react'
 import { projectsUrls } from '../projectsUrls.js'
 import Description from '../description/description'
 import './main.css'
-const logo = '/img/Capture.PNG'
 export default class Main extends Component {
   render() {
     return (
@@ -34,12 +33,12 @@ export default class Main extends Component {
                           <ul className="d-flex">
                             {project.tools.map(tool => {
                               return (
-                                tool === "img/winform.png" ? <li className="px-1">
-                                  <img height="30" width="70" src={tool} />
+                                tool.includes('wide') ? <li className="px-1">
+                                  <img width="70" src={tool} />
                                 </li>
                                   :
                                   <li className="px-1">
-                                    <img height="30" width="30" src={tool} />
+                                    <img width="30" src={tool} />
                                   </li>
                               )
                             })}
