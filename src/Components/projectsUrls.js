@@ -12,8 +12,11 @@ export const projectsUrls = [
       `${imgPath}/mongoDb.png`,
       `${imgPath}/bootstrap-solid.svg`
     ],
-    description: `A full stack app with React, NodeJs and PostgreSQL that enables users to register and login to detect faces in their photos using
-    Clarifai API by getting faces positions in the submitted image , then creates list of empty divs with borders to contain these faces
+    description: `A full stack app with React,
+     NodeJs and MongoDB that enables users 
+     to register and login to write a message , 
+     reply to others messages ,
+     edit or delete their own messages
     `
   },
   {
