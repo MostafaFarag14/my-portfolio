@@ -2,6 +2,21 @@ export const imgPath = 'https://antably.s3.eu-west-3.amazonaws.com/portfolio'
 
 export const projectsUrls = [
   {
+    name: "Guest-book",
+    url: "https://guest-book.netlify.app/",
+    code: "https://github.com/MostafaFarag14/Guest-book",
+    image: `${imgPath}/guest-book.png`,
+    tools: [
+      `${imgPath}/react.png`,
+      `${imgPath}/nodejs.png`,
+      `${imgPath}/mongoDb.png`,
+      `${imgPath}/bootstrap-solid.svg`
+    ],
+    description: `A full stack app with React, NodeJs and PostgreSQL that enables users to register and login to detect faces in their photos using
+    Clarifai API by getting faces positions in the submitted image , then creates list of empty divs with borders to contain these faces
+    `
+  },
+  {
     name: "smart-brain",
     url: "https://idiot-brain.netlify.app/",
     code: "https://github.com/MostafaFarag14/smart-brain",
