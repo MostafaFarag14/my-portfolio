@@ -6,7 +6,7 @@ import About from '../about/about'
 import Contact from '../contact/contact'
 function App() {
   return (
-    <div className="App bg-light">
+    <div className="App">
       <Header />
       <About />
       <Main />

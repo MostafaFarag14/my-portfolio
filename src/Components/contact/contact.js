@@ -33,8 +33,8 @@ export default class Contact extends Component {
         <ul className="justify-content-center d-flex mb-0">
           {contacts.map((contact, index) => {
             return (
-              <div className="">
-                <li key={index} className="px-5 d-flex">
+              <div key={index} className="">
+                <li  className="px-5 d-flex">
                   {
                     contact.url === "#" ? 
                       <img className="mx-5 d-flex" src={contact.logo} height="40" width="40" ></img>

@@ -6,38 +6,38 @@ export default class Main extends Component {
   render() {
     return (
       <div id="portfolio">
-        <div class="album py-5">
-          <div class="container">
+        <div className="album py-5">
+          <div className="container">
             <h1>PORTFOLIO</h1>
-            <div class="row">
+            <div className="row">
               {
-                projectsUrls.map(project => {
-                  return <div class="col-md-6">
-                    <div class="card mb-4 shadow">
+                projectsUrls.map((project, index) => {
+                  return <div key={index} className="col-md-6">
+                    <div className="card mb-4 shadow">
                       <Description description={project.description} />
                       <a href={project.url} target="_blank">
-                        <img class="card-img-top" height="300" src={project.image} data-holder-rendered="true" />
+                        <img className="card-img-top" height="300" src={project.image} data-holder-rendered="true" />
                       </a>
                       <hr className="m-0"></hr>
-                      <div class="card-body">
-                        <h5 class="card-text mb-3">{project.name}</h5>
-                        <div class="d-flex justify-content-between align-items-center">
+                      <div className="card-body">
+                        <h5 className="card-text mb-3">{project.name}</h5>
+                        <div className="d-flex justify-content-between align-items-center">
 
-                          <div class="btn-group">
+                          <div className="btn-group">
                             
-                            {project.url && <a type="button" class="btn btn-sm btn-outline-info" href={project.url} target="_blank">View Live</a>}
-                            <a type="button" class="btn btn-sm btn-outline-info" href={project.code} target="_blank">Source Code</a>
+                            {project.url && <a type="button" className="btn btn-sm btn-outline-info" href={project.url} target="_blank">View Live</a>}
+                            <a type="button" className="btn btn-sm btn-outline-info" href={project.code} target="_blank">Source Code</a>
                           </div>
 
-                          <small class="text-muted"></small>
+                          <small className="text-muted"></small>
                           <ul className="d-flex">
-                            {project.tools.map(tool => {
+                            {project.tools.map((tool, index) => {
                               return (
-                                tool.includes('wide') ? <li className="px-1">
+                                tool.includes('wide') ? <li key={index} className="px-1">
                                   <img width="70" src={tool} />
                                 </li>
                                   :
-                                  <li className="px-1">
+                                  <li key={index} className="px-1">
                                     <img width="30" src={tool} />
                                   </li>
                               )

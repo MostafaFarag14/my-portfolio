@@ -10,8 +10,8 @@ export default class Header extends Component {
 
           <ul className="navbar-nav">
             <Scrollspy className="navbar-nav scrollspy" items={['about', 'portfolio', 'contact']} currentClassName="isCurrent">
-              {['About', 'Portfolio', 'Contact'].map(item => {
-                return (<li className="nav-item mx-4">
+              {['About', 'Portfolio', 'Contact'].map((item, index) => {
+                return (<li key={index} className="nav-item mx-4">
                   <a className="nav-link" href={`#${item.toLowerCase()}`}>{item}</a>
                 </li>)
               })}

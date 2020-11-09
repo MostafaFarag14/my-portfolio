@@ -2,6 +2,24 @@ export const imgPath = 'https://antably.s3.eu-west-3.amazonaws.com/portfolio'
 
 export const projectsUrls = [
   {
+    name: 'Would You Rather',
+    url: 'https://would-you-razer.netlify.app/',
+    code: 'https://github.com/MostafaFarag14/would-you-rather.git',
+    image: `${imgPath}/would-you-rather.png`,
+    tools: [
+      `${imgPath}/react.png`,
+      `${imgPath}/icons8-redux.svg`,
+      `${imgPath}/semantic-ui.svg`
+    ],
+    description: `A voting app that enables user to login,
+     once logged in he can see all of poll questions made in the app.
+       The user can't see the votes on some question until he vote in it,
+        once voted he will see how many votes and percentage for each choice ,
+         and his choice will be marked, user can also post a poll question.
+          There is a Leader board for all users ordered descending based on their questions and answers.`
+  },
+
+  {
     name: "Guest-book",
     url: "https://guest-book.netlify.app/",
     code: "https://github.com/MostafaFarag14/Guest-book",
@@ -20,7 +38,7 @@ export const projectsUrls = [
     `
   },
   {
-    name: "smart-brain",
+    name: "Smart-brain",
     url: "https://idiot-brain.netlify.app/",
     code: "https://github.com/MostafaFarag14/smart-brain",
     image: `${imgPath}/smart_brain.png`,
