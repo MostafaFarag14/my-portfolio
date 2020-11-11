@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { projectsUrls } from '../projectsUrls.js'
+import { projectsUrls, imgPath } from '../projectsUrls.js'
 import Description from '../description/description'
 import './main.css'
 export default class Main extends Component {
@@ -24,7 +24,7 @@ export default class Main extends Component {
                         <div className="d-flex justify-content-between align-items-center">
 
                           <div className="btn-group">
-                            
+
                             {project.url && <a type="button" className="btn btn-sm btn-outline-info" href={project.url} target="_blank">View Live</a>}
                             <a type="button" className="btn btn-sm btn-outline-info" href={project.code} target="_blank">Source Code</a>
                           </div>
@@ -33,12 +33,12 @@ export default class Main extends Component {
                           <ul className="d-flex">
                             {project.tools.map((tool, index) => {
                               return (
-                                tool.includes('wide') ? <li key={index} className="px-1">
-                                  <img width="70" src={tool} />
+                                tool.imgUrl.includes('wide') ? <li key={index} className="px-1">
+                                  <img title={tool.title} width="70" src={`${imgPath}/${tool.imgUrl}`} />
                                 </li>
                                   :
-                                  <li key={index} className="px-1">
-                                    <img width="30" src={tool} />
+                                  <li title={tool.title} key={index} className="px-1">
+                                    <img width="30" src={`${imgPath}/${tool.imgUrl}`} />
                                   </li>
                               )
                             })}

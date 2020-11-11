@@ -1,5 +1,85 @@
 export const imgPath = 'https://antably.s3.eu-west-3.amazonaws.com/portfolio'
 
+const tools = {
+  react: {
+    title: 'React',
+    imgUrl: `react.png`
+  },
+  redux: {
+    title: 'Redux',
+    imgUrl: `icons8-redux.svg`
+  },
+  semanticUi: {
+    title: 'Semantic UI React',
+    imgUrl: `react-semantic-ui.png`
+  },
+  reactNative: {
+    title: 'React Native',
+    imgUrl: 'react-native-logo.png'
+  },
+  reactNavigation: {
+    title: 'React Navigation',
+    imgUrl: 'react-navigation.svg'
+  },
+  expo: {
+    title: 'Expo',
+    imgUrl: 'expo.png'
+  },
+  reactRouter: {
+    title: 'React Router',
+    imgUrl: 'react-router-seeklogo.com.svg'
+  },
+  asyncStorage: {
+    title: 'Async Storage',
+    imgUrl: 'async-storage.svg'
+  },
+  bootStrap: {
+    title: 'Bootstrap',
+    imgUrl: 'bootstrap-solid.svg'
+  },
+  nodeJs: {
+    title: 'NodeJs',
+    imgUrl: 'nodejs.png'
+  },
+  postgresSql: {
+    title: 'Postgres SQL',
+    imgUrl: 'postgres.png'
+  },
+  mongoDb: {
+    title: 'Mongo DB',
+    imgUrl: 'mongoDb.png'
+  },
+  clarifai: {
+    title: 'Clarifai',
+    imgUrl: 'wide_Clarifai_Logo_FC.png'
+  },
+  javaScript: {
+    title: 'JavaScript',
+    imgUrl: 'javascript.png'
+  },
+  html: {
+    title: 'HTML',
+    imgUrl: 'html.png'
+  },
+  css: {
+    title: 'CSS',
+    imgUrl: 'css.png'
+  },
+  cpp: {
+    title: 'C++',
+    imgUrl: 'cplpl.png'
+  },
+  cSharp: {
+    title: 'C#',
+    imgUrl: 'cSharp.png'
+  },
+  winForms: {
+    title: 'Windows Forms',
+    imgUrl: 'wide_winform.png'
+  }
+
+}
+
 export const projectsUrls = [
   {
     name: 'Would You Rather',
@@ -7,9 +87,10 @@ export const projectsUrls = [
     code: 'https://github.com/MostafaFarag14/would-you-rather.git',
     image: `${imgPath}/would-you-rather.png`,
     tools: [
-      `${imgPath}/react.png`,
-      `${imgPath}/icons8-redux.svg`,
-      `${imgPath}/semantic-ui.svg`
+      tools.react,
+      tools.redux,
+      tools.semanticUi,
+      tools.reactRouter
     ],
     description: `A voting app that enables user to login,
      once logged in he can see all of poll questions made in the app.
@@ -20,47 +101,13 @@ export const projectsUrls = [
   },
 
   {
-    name: "Guest-book",
-    url: "https://guest-book.netlify.app/",
-    code: "https://github.com/MostafaFarag14/Guest-book",
-    image: `${imgPath}/guest-book.png`,
-    tools: [
-      `${imgPath}/react.png`,
-      `${imgPath}/nodejs.png`,
-      `${imgPath}/mongoDb.png`,
-      `${imgPath}/bootstrap-solid.svg`
-    ],
-    description: `A full stack app with React,
-     NodeJs and MongoDB that enables users 
-     to register and login to write a message , 
-     reply to others messages ,
-     edit or delete their own messages
-    `
-  },
-  {
-    name: "Smart-brain",
-    url: "https://idiot-brain.netlify.app/",
-    code: "https://github.com/MostafaFarag14/smart-brain",
-    image: `${imgPath}/smart_brain.png`,
-    tools: [
-      `${imgPath}/react.png`,
-      `${imgPath}/nodejs.png`,
-      `${imgPath}/postgres.png`,
-      `${imgPath}/bootstrap-solid.svg`,
-      `${imgPath}/wide_Clarifai_Logo_FC.png`
-    ],
-    description: `A full stack app with React, NodeJs and PostgreSQL that enables users to register and login to detect faces in their photos using
-    Clarifai API by getting faces positions in the submitted image , then creates list of empty divs with borders to contain these faces
-    `
-  },
-  {
     name: "Movie-App",
     url: "https://ree-action.netlify.com/",
     code: "https://github.com/MostafaFarag14/Movie-App.git",
     image: `${imgPath}/reeaction.png`,
     tools: [
-      `${imgPath}/react.png`,
-      `${imgPath}/bootstrap-solid.svg`
+      tools.react,
+      tools.bootStrap
     ],
     description: `A movie browser react app that interacts with The Movie DB API to get trending,
      top rated, popular and upcoming movies. also it has a live search for a certain movie. 
@@ -69,14 +116,63 @@ export const projectsUrls = [
     `
   },
   {
+    name: 'Mobile-flashcards',
+    url: 'https://snack.expo.io/@mostafa14/github.com-mostafafarag14-mobile-flashcards',
+    code: 'https://github.com/MostafaFarag14/mobile-flashcards',
+    image: `${imgPath}/mobile-flashcards.png`,
+    tools: [
+      tools.reactNative,
+      tools.reactNavigation,
+      tools.redux,
+      tools.asyncStorage,
+    ],
+    description: `A mobile application that allows users to study collections of flashcards. 
+    The app will allow users to create different categories of flashcards called "decks",
+     add flashcards to those decks, then take quizzes on those decks`
+  },
+  {
+    name: "Smart-brain",
+    url: "https://idiot-brain.netlify.app/",
+    code: "https://github.com/MostafaFarag14/smart-brain",
+    image: `${imgPath}/smart_brain.png`,
+    tools: [
+      tools.react,
+      tools.nodeJs,
+      tools.postgresSql,
+      tools.bootStrap,
+      tools.clarifai
+    ],
+    description: `A full stack app with React, NodeJs and PostgreSQL that enables users to register and login to detect faces in their photos using
+    Clarifai API by getting faces positions in the submitted image , then creates list of empty divs with borders to contain these faces
+    `
+  },
+  {
+    name: "Guest-book",
+    url: "https://guest-book.netlify.app/",
+    code: "https://github.com/MostafaFarag14/Guest-book",
+    image: `${imgPath}/guest-book.png`,
+    tools: [
+      tools.react,
+      tools.nodeJs,
+      tools.mongoDb,
+      tools.bootStrap
+    ],
+    description: `A full stack app with React,
+     NodeJs and MongoDB that enables users 
+     to register and login to write a message , 
+     reply to others messages ,
+     edit or delete their own messages
+    `
+  },
+
+  {
     name: "Jammming",
     url: "https://jammming-hits.netlify.com/",
     code: "https://github.com/MostafaFarag14/Jammming-react-app.git",
     image: `${imgPath}/jamming.png`,
     tools: [
-      `${imgPath}/react.png`,
-      `${imgPath}/css.png`
-
+      tools.react,
+      tools.css
     ],
     description: `A react app that interacts with Spotify API to allow users to search the Spotify library,
      create a custom playlist by adding songs from the search results, then save it to their Spotify account.`
@@ -87,9 +183,9 @@ export const projectsUrls = [
     code: "https://github.com/MostafaFarag14/shooter-game.git",
     image: `${imgPath}/shooter.png`,
     tools: [
-      `${imgPath}/javascript.png`,
-      `${imgPath}/html.png`,
-      `${imgPath}/css.png`
+      tools.javaScript,
+      tools.html,
+      tools.css
     ],
     description: `It's a shooting game that allows the user to select 3 levels and 3 characters.
     each level has a different environment and spawning frequency of 2 different kinds enemies.
@@ -101,8 +197,8 @@ export const projectsUrls = [
     code: "https://github.com/MostafaFarag14/calculator.git",
     image: `${imgPath}/calculator.png`,
     tools: [
-      `${imgPath}/react.png`,
-      `${imgPath}/bootstrap-solid.svg`
+      tools.react,
+      tools.bootStrap
     ],
     description: `A simple calculator using React`
   }
@@ -113,7 +209,7 @@ export const projectsUrls = [
     code: "https://github.com/MostafaFarag14/Piano-player.git",
     image: `${imgPath}/piano.png`,
     tools: [
-      `${imgPath}/javascript.png`
+      tools.javaScript
     ],
     description: `A piano player app which i have added functionality to it using javascript and made it 
     playable using mouse or keyboard keys by mapping each key or mouse click to certain audio`
@@ -124,9 +220,9 @@ export const projectsUrls = [
     code: "https://github.com/MostafaFarag14/Chore-Door.git",
     image: `${imgPath}/choreDoor.png`,
     tools: [
-      `${imgPath}/javascript.png`,
-      `${imgPath}/html.png`,
-      `${imgPath}/css.png`
+      tools.javaScript,
+      tools.html,
+      tools.css
     ],
     description: `A game using html and javascript. There is a Bot hiding behind one of 3 doors,
     Your mission is to open two Consecutive doors without running into the ChoreBot to win.
@@ -138,8 +234,8 @@ export const projectsUrls = [
     image: `${imgPath}/allocation.png`,
     description: `A Desktop App built using c# and winForms to simulate allocating of proccesses algorithms`,
     tools: [
-      `${imgPath}/cSharp.png`,
-      `${imgPath}/wide_winform.png`
+      tools.cSharp,
+      tools.winForms
     ]
   },
   {
@@ -148,7 +244,7 @@ export const projectsUrls = [
     image: `${imgPath}/round_function.jpg`,
     description: `A Console App with C++ to implement DES Function`,
     tools: [
-      `${imgPath}/cplpl.png`,
+      tools.cpp
     ]
   },
   {
@@ -159,7 +255,7 @@ export const projectsUrls = [
     then identifies the tokens and passes that list of tokens to the parser to get 
     Recognized structures and saves it to a text file` ,
     tools: [
-      `${imgPath}/cplpl.png`,
+      tools.cpp
     ]
   },
   {
@@ -168,7 +264,7 @@ export const projectsUrls = [
     image: `${imgPath}/Job scheduler.png`,
     description: `A Console c++ app implements scheduling algorithms like FCFS, higher priority first , SJF and round robin`,
     tools: [
-      `${imgPath}/cplpl.png`,
+      tools.cpp
     ]
 
   }
