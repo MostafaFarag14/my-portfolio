@@ -76,11 +76,38 @@ const tools = {
   winForms: {
     title: 'Windows Forms',
     imgUrl: 'wide_winform.png'
+  },
+  payPal: {
+    title: 'PayPal',
+    imgUrl: 'wide_PayPal.svg'
+  },
+  strapi: {
+    title: 'Strapi CMS',
+    imgUrl: 'wide_strapi-logo-light.svg'
   }
 
 }
 
 export const projectsUrls = [
+  {
+    name: 'Mobile Store',
+    url: 'https://phone-storena.netlify.app/',
+    code: 'https://github.com/MostafaFarag14/mobile-ecommerce',
+    image: `${imgPath}/mobile-store.png`,
+    tools: [
+      tools.react,
+      tools.strapi,
+      tools.semanticUi,
+      tools.reactRouter,
+      tools.payPal
+    ],
+    description: `An e-commerce mobile store app that displays a collection of phones
+    , search for a specific phone by name or filter the phones by brand , price , storage and so on.
+    user can select a specific phone to view more specs. user can add products to cart and place order
+    to make a payment to paypal sandbox. In this app I used strapi CMS to store phones data.
+    `
+  },
+
   {
     name: 'Would You Rather',
     url: 'https://would-you-razer.netlify.app/',
