@@ -12,8 +12,8 @@ export default class Main extends Component {
             <div className="row">
               {
                 projectsUrls.map((project, index) => {
-                  return <div key={index} className="col-md-6">
-                    <div className="card mb-4 shadow">
+                  return <div key={index} className="col-md-6 mb-4">
+                    <div className="card mb-4 shadow h-100">
                       <Description description={project.description} />
                       <a href={project.url} target="_blank">
                         <img className="card-img-top" height="300" src={project.image} data-holder-rendered="true" />
@@ -30,7 +30,7 @@ export default class Main extends Component {
                           </div>
 
                           <small className="text-muted"></small>
-                          <ul className="d-flex">
+                          <ul className="d-flex flex-wrap">
                             {project.tools.map((tool, index) => {
                               return (
                                 tool.imgUrl.includes('wide') ? <li key={index} className="px-1">

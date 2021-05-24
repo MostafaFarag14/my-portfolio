@@ -5,7 +5,7 @@ export default class Header extends Component {
   render() {
     return (
 
-      <nav id="header" className="header navbar navbar-expand-lg shadow sticky-top" >
+      <nav id="header" className="header navbar navbar-expand-sm shadow sticky-top" >
         <div className="container justify-content-center">
 
           <ul className="navbar-nav">
