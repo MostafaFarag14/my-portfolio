@@ -6,23 +6,25 @@ export default class About extends Component {
       <div className="about p-5">
         <main style={{ maxWidth: '50rem' }} id="about" role="main" className="main inner cover h-100 p-3 mx-auto text-center">
           <h1 className="cover-heading">ABOUT</h1>
-          <p style={{ textAlign: 'left', fontSize: '1rem' }} className="lead">Hi, my name is Mostafa Farag.
-          I'm a React Developer and i have some experience in :
-          <ul style={{listStyleType: 'circle'}}>
-              <li>Creating reusable and scalable react components</li>
-              <li>State management using hooks, redux and Context API,</li>
-              <li>Working with REST APIs,</li>
-              <li>Working with styling libraries like Bootstrap , React semantic UI and material UI</li>
-              <li>Client-side routing using react-router</li>
-              <li>Creating responsive apps using grids and flex-box</li>
-              <li>Using Headless CMS like strapi</li>
+          <p style={{ textAlign: 'left', fontSize: '1rem' }} className="lead">
+            <h6 style={{ fontSize: '1.1rem' }}>Hi, my name is Mostafa Farag. I'm a React Developer and i have some experience in :</h6>
+            <ul style={{ listStyleType: 'circle' }}>
+              <li>Creating reusable and scalable React components</li>
+              <li>Working with Hooks, Redux and Context API</li>
+              <li>Working with REST APIs</li>
+              <li>Client-side routing using React-router</li>
+              <li>Working with styling libraries like Bootstrap , React Semantic UI and Material UI</li>
+              <li>Working with Styled-Components and CSS modules</li>
+              <li>Creating responsive apps using Grids and Flex-Box</li>
+              <li>Using Headless CMS like Strapi</li>
             </ul>
-          I'm also familiar with :
-          <ul style={{ listStyleType: 'circle' }}>
+            <h6 style={{ fontSize: '1.1rem' }}>I'm also familiar with :</h6>
+            <ul style={{ listStyleType: 'circle' }}>
               <li>NextJs including SSR, SSG and file-based routing</li>
               <li>NodeJS and Express to create API endpoints</li>
               <li>Firebase including authentication and firestore</li>
               <li>Mobile development using React Native</li>
+              <li>Using Formik for handling form data, validation and submission</li>
               <li>AWS basics</li>
               <li>GraphQL</li>
             </ul>

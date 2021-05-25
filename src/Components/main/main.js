@@ -12,21 +12,21 @@ export default class Main extends Component {
             <div className="row">
               {
                 projectsUrls.map((project, index) => {
-                  return <div key={index} className="col-md-6 mb-4">
+                  return <div key={index} className="col-lg-6 mb-4">
                     <div className="card mb-4 shadow h-100">
                       <Description description={project.description} />
                       <a href={project.url} target="_blank">
                         <img className="card-img-top" height="300" src={project.image} data-holder-rendered="true" />
                       </a>
                       <hr className="m-0"></hr>
-                      <div className="card-body">
+                      <div className="card-body d-flex flex-column justify-content-between">
                         <h5 className="card-text mb-3">{project.name}</h5>
                         <div className="d-flex justify-content-between align-items-center">
 
                           <div className="btn-group">
 
-                            {project.url && <a type="button" className="btn btn-sm btn-outline-info" href={project.url} target="_blank">View Live</a>}
-                            <a type="button" className="btn btn-sm btn-outline-info" href={project.code} target="_blank">Source Code</a>
+                            {project.url && <a className="btn btn-sm btn-outline-info" href={project.url} target="_blank">View Live</a>}
+                            <a className="btn btn-sm btn-outline-info" href={project.code} target="_blank">Source Code</a>
                           </div>
 
                           <small className="text-muted"></small>
